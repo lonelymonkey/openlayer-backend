@@ -1,0 +1,31 @@
+{
+  "name": "openlayer-backend",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lonelymonkey/openlayer-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lonelymonkey/openlayer-backend/issues"
+  },
+  "homepage": "https://github.com/lonelymonkey/openlayer-backend#readme",
+  "devDependencies": {
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.5",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "@types/node": "^13.7.0",
+    "@types/ol": "^6.1.0",
+    "ol": "^6.1.1"
+  }
+}

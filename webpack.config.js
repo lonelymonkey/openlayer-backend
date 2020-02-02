@@ -1,6 +1,8 @@
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const path = require('path');
 const {
-  NODE_ENV = 'production',
+  NODE_ENV = 'development',
+  // NODE_ENV = 'production'
 } = process.env;
 
 module.exports = {
@@ -9,7 +11,8 @@ module.exports = {
   target: 'node',
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: 'index.js'
+    filename: 'index.js',
+    pathinfo: true
   },
   resolve: {
     extensions: ['.ts', '.js'],
@@ -23,5 +26,10 @@ module.exports = {
         ]
       }
     ]
-  }
+  },
+  optimization: {
+    // minimizer: [new UglifyJsPlugin()],
+    usedExports: true,
+    sideEffects: true
+  },
 }
