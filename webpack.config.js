@@ -1,4 +1,3 @@
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const path = require('path');
 const {
   NODE_ENV = 'development',

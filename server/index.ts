@@ -8,9 +8,9 @@ global['document'] = {
 import { fromLonLat } from 'ol/proj';
 import PointerInteraction from 'ol/interaction/Pointer';
 import { MapBrowserPointerEvent } from 'ol';
-import OlMap from 'ol/map';
-import OlFeature from 'ol/Feature';
-// import { Map as OlMap, Feature as OlFeature } from 'ol'; // this will make webpack fail
+// import OlMap from 'ol/map';
+// import OlFeature from 'ol/Feature';
+import { Map as OlMap, Feature as OlFeature } from 'ol'; // this will make webpack fail
 import { Point } from 'ol/geom';
 import { Coordinate } from 'ol/coordinate';
 import { Options as PointerInteractionOptions } from 'ol/interaction/Pointer';
